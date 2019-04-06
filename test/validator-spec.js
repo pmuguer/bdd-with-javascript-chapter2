@@ -7,4 +7,10 @@ describe('A Validator', function() {
         function() {
             expect(validator(0)).to.be.deep.equal(['error.nonpositive']);
         });
+
+    it('will return no errors for valid numbers', 
+        function() {
+            expect(validator(3)).to.be.empty;
+        });
+ 
     });
