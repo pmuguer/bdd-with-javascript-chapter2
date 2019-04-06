@@ -1,7 +1,13 @@
 var assert = require('assert');
 
-describe('Be welcome to mocha', function() {
-    it('with a failing test', function() {
-        assert(false, 'Hello World');
+function validator() {
+}
+
+describe('A Validator', function() {
+    it('will return error.nonpositive for not strictly positive numbers', 
+        function() {
+            assert.deepEqual(validator(0), ['error.nonpositive']);
+        });
     });
-});
+
+
