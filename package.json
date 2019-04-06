@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -u bdd -R spec -t 500 --recursive"
   },
   "author": "",
   "license": "ISC",
